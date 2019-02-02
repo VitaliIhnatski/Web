@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>index26</title>
+	</head>
+	<body>
+		<script>
+var a = prompt('Введите значение a', '0');
+var b = prompt('Введите значение b', '0');
+var c = prompt('Введите значение с', '0');
+var result;
+if (a != Number(a) || b != Number(b) || c != Number(c) || a<=0 || b<=0 || c<=0) { 
+alert('Вами были введены недопустимые значения!') 
+}	
+else {
+result = (a*a+b*b==c*c) ? 'Ура:угадали длины сторон треугольника' : 'Надо учить теорему';
+alert(result);	
+}
+		</script>
+	</body>
+</html> 
