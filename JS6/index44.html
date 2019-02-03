@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index44</title>
+</head>
+
+<body>
+    <script>
+        function calcD(a, b, c) {
+            return b * b - 4 * a * c;
+        }
+        while (true) {
+            var a = prompt('Введите число a:').replace(/,/g, '.');
+            if (/^-?\d*[.]?\d*$/.test(a))
+                break;
+            else
+                alert('Недопустимое значение! Введите число!');
+        }
+        while (true) {
+            var b = prompt('Введите число b:').replace(/,/g, '.');
+            if (/^-?\d*[.]?\d*$/.test(b))
+                break;
+            else
+                alert('Недопустимое значение! Введите число!');
+        }
+        while (true) {
+            var c = prompt('Введите число c:').replace(/,/g, '.');
+            if (/^-?\d*[.]?\d*$/.test(c))
+                break;
+            else
+                alert('Недопустимое значение! Введите число!');
+        }
+        var discriminant = calcD(a, b, c);
+        var msg = 'D=' + discriminant;
+        if (discriminant < 0)
+            msg = msg + '\nДискриминант отрицательный, корней нет.';
+        if (discriminant == Infinity || isNaN(discriminant))
+            msg = "Увы, дискриминант посчитать не удалось! Вероятно, Вами введены недопустимые значения...";
+        alert(msg);
+    </script>
+</body>
+
+</html>
