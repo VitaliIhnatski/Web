@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>index35</title>
+		<meta charset="utf-8">
+		<title>Грибы по цвету и наличию юбки</title>
 	</head>
 	<body>
 		<script>
-		var color=window.prompt("Введите цвет");
-		var skirt=window.prompt("А юбка есть?");
-		switch(color){
-		              case "белый": switch(skirt){
-			                                      case "нет": alert("Вы нашли белый гриб!"); 
-			                                     } break;
-					  case "красный": switch(skirt){
-			                                        case "да": alert("А не мухомор ли это??"); break;
-													case "нет": alert("Может это подосиновик"); break;
-			                                       } break;  
-					  default: alert("С грибами надо быть внимательными!");
-			         };
+		
+			color = prompt('Введите цвет гриба(коричневый, красный, желтый, белый): ', ' ');
+			
+			
+			switch(true)
+			{
+			case (color==='коричневый' || color==='красный' || color==='коричневый' || color==='белый' ):
+			alert('Принято');
+			break;
+			default:
+			alert('Цвет гриба введен неправильно');
+			}
+			
+			skirt = prompt('Введите наличие юбки(есть или нет) ', ' ');
+			switch(true)
+			{
+			case (skirt==='есть' || skirt==='нет'):
+			alert('Принято');
+			break;
+			default:
+			alert('Неверно. Есть только два варианта : есть или нет');
+			}
+			
+			switch(true)
+			{
+			case (color==='белый' && skirt==='нет'):
+			alert('Вы нашли белый гриб');
+			break;
+			
+			case (color==='красный' && skirt==='есть'):
+			alert('А не мухомор ли это');
+			break;
+			
+			case (color==='красный' && skirt==='нет'):
+			alert('Может это подосиновик');
+			break;
+			
+			default:
+			alert('С грибами надо быть внимательными');
+			}
+			
+			
 		</script>
 	</body>
-</html> 
+</html>
