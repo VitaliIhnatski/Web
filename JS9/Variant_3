@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#but1").click(function(){
+					$("a[href]").hide();
+				});
+				$("#but2").click(function(){
+					$("a[href]").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id = "but1">Спрятать элементы с атрибутом href</button>
+		<button id = "but2">Показать элементы с атрибутом href </button>
+		<p align="left"><a href="http://tut.by" style="width: 500px;">Тут href="left"</a></p>
+		<p align="right"><a href="http://onliner.by" style="width: 500px;">Тут href="right"</a></p>
+		<p align="center"><a href="http://google.by" style="width: 500px;">Тут href="center"</a></p>
+		
+	</body>
+</html>
