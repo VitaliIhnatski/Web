@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	  
+	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  <script>
+	          $(document).ready(function () {
+	             $("input").focus(function () {
+				    $(this).css("background-color", "#cccccc")
+	          
+	           });
+			   $("input").blur(function () {
+				    $(this).css("background-color", "#ffffff")
+					
+			   });
+	  });
+	  </script>
+	  </head>
+	  <body>
+	      Имя пользователя:<input type="text" name="fullname"><br>
+		  E-mail:<input type="text" name="email"><br>
+	  </body>
+</html>
